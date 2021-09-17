@@ -39,46 +39,20 @@ div.shoe {
     z-index: 1;
     left: 540px;
     top: 400px;   
-    animation-name: shoeanim;
-    animation-duration: 5s;
+    animation-name: imganim;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
-@keyframes shoeanim {
-    /* from {
-        left: 0px;
-        top: 0px;
+@keyframes imganim {
+    from {
+        transform: rotate(0) scale(0);
+        /* transform: scale(0); */
     }
     to {
-        left: 540px;
-        top: 400px;
-    } */
-
-    0% {
-        left: 0px;
-        top: 0px;
+        transform: rotate(60deg) scale(1);
+        /* transform: scale(1); */
     }
-
-    40% {
-        left: 540px;
-        top: 400px;
-    }
-
-    45% {
-        left: 540px;
-        top: 300px;
-    }
-
-    50% {
-        left: 540px;
-        top: 400px;
-    }
-
-    100% {
-        left: 540px;
-        top: 400px;
-    }
-
 }    
 
 
@@ -98,6 +72,11 @@ div.moon {
     z-index: 0;
     left: 300px;
     top: 670px;
+    animation-name: imganim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
 }
 
 p.ism {
@@ -127,4 +106,10 @@ div.pineapple {
     z-index: 2;
     left: 550px;
     top: 750px;
+    animation-name: imganim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    animation-fill-mode: backwards;
 }
+
